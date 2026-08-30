@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-    baseURL: "http://localhost:5000/api"
+  baseURL: "https://growday-no09.onrender.com/api"
 });
 
 // Automatically attach the logged-in user's JWT
