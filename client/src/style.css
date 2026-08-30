@@ -1,0 +1,1145 @@
+/* =========================================
+   🌸 GROWDAY — CUTE PASTEL CSS THEME 🎀
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #594653;
+    min-height: 100vh;
+
+    background:
+        radial-gradient(circle at 8% 12%, rgba(255, 182, 209, 0.45), transparent 22%),
+        radial-gradient(circle at 92% 15%, rgba(214, 194, 255, 0.40), transparent 22%),
+        radial-gradient(circle at 15% 90%, rgba(255, 225, 184, 0.38), transparent 20%),
+        radial-gradient(circle at 90% 85%, rgba(190, 231, 255, 0.40), transparent 22%),
+        linear-gradient(135deg, #fff0f6, #ffe5ef 45%, #f8efff 100%);
+
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* =========================================
+   ✨ FLOATING BACKGROUND DECORATIONS
+========================================= */
+
+body::before {
+    content: "♡  ✦  🌸  ✧  ♡  🎀  ✦  🌷  ♡";
+    position: fixed;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    color: rgba(220, 100, 145, 0.20);
+    font-size: 22px;
+    letter-spacing: 28px;
+    pointer-events: none;
+    z-index: -1;
+    white-space: nowrap;
+}
+
+body::after {
+    content: "☁️        🦋             ☁️        ✨";
+    position: fixed;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+    opacity: 0.35;
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* =========================================
+   🌸 ROOT
+========================================= */
+
+#root {
+    min-height: 100vh;
+    position: relative;
+}
+
+/* =========================================
+   🎀 NAVBAR
+========================================= */
+
+.navbar {
+    width: 100%;
+    padding: 18px 40px;
+
+    background: rgba(255, 255, 255, 0.88);
+    backdrop-filter: blur(14px);
+
+    border-bottom: 2px solid #ffd1e1;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    box-shadow:
+        0 6px 25px rgba(210, 100, 145, 0.12);
+
+    position: relative;
+    z-index: 10;
+}
+
+.navbar::before {
+    content: "🎀";
+    position: absolute;
+    left: 10px;
+    top: -5px;
+    font-size: 25px;
+    transform: rotate(-10deg);
+}
+
+.navbar::after {
+    content: "♡ ✨";
+    position: absolute;
+    right: 18px;
+    bottom: -11px;
+    color: #e991b2;
+    font-size: 14px;
+}
+
+.navbar-logo {
+    font-size: 23px;
+    font-weight: bold;
+    color: #d85d8b;
+    text-shadow: 1px 1px 0 #ffe0eb;
+}
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar-links a {
+    color: #745767;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+.navbar-links a:hover {
+    color: #d64f82;
+    transform: translateY(-2px);
+}
+
+.user-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: #9b6980;
+}
+
+.logout-btn {
+    border: 1px solid #ffc7db;
+    padding: 9px 16px;
+    border-radius: 20px;
+
+    background: #fff0f6;
+    color: #c74e7b;
+
+    cursor: pointer;
+    font-weight: 600;
+
+    transition: 0.2s ease;
+}
+
+.logout-btn:hover {
+    background: #ffdce9;
+    transform: translateY(-2px);
+}
+
+/* =========================================
+   🌷 MAIN PAGE
+========================================= */
+
+.home-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 55px 25px;
+    position: relative;
+}
+
+/* Cute corner decorations */
+
+.home-container::before {
+    content: "🌸";
+    position: fixed;
+    left: 25px;
+    top: 145px;
+    font-size: 35px;
+    opacity: 0.55;
+    pointer-events: none;
+}
+
+.home-container::after {
+    content: "🦋";
+    position: fixed;
+    right: 25px;
+    bottom: 120px;
+    font-size: 32px;
+    opacity: 0.55;
+    pointer-events: none;
+}
+
+.home-header {
+    text-align: center;
+    margin-bottom: 45px;
+    position: relative;
+}
+
+.home-header::before {
+    content: "✦";
+    position: absolute;
+    left: 20%;
+    top: 5px;
+    color: #e99bb8;
+    font-size: 22px;
+}
+
+.home-header::after {
+    content: "♡";
+    position: absolute;
+    right: 20%;
+    top: 5px;
+    color: #db77a0;
+    font-size: 24px;
+}
+
+.home-header h1 {
+    font-size: 42px;
+    margin-bottom: 12px;
+    color: #d25283;
+    text-shadow: 2px 2px 0 #ffe0eb;
+}
+
+.home-header h1::after {
+    content: " ✨";
+}
+
+.home-header p {
+    font-size: 18px;
+    color: #856878;
+}
+
+/* =========================================
+   🌸 HABITS TITLE
+========================================= */
+
+.habits-title {
+    font-size: 28px;
+    margin-bottom: 25px;
+    color: #87546e;
+}
+
+.habits-title::before {
+    content: "🌷 ";
+}
+
+/* =========================================
+   💕 HABIT GRID
+========================================= */
+
+.habits-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+/* =========================================
+   🎀 HABIT CARD
+========================================= */
+
+.habit-card {
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,0.96),
+            rgba(255,239,246,0.93)
+        );
+
+    border-radius: 24px;
+    padding: 22px;
+
+    border: 2px solid #ffd7e5;
+
+    box-shadow:
+        0 8px 25px rgba(211, 105, 150, 0.12);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+
+    position: relative;
+    overflow: hidden;
+}
+
+/* top-right heart */
+
+.habit-card::before {
+    content: "♡";
+    position: absolute;
+    right: 17px;
+    top: 10px;
+
+    color: #ee9aba;
+    font-size: 24px;
+}
+
+/* tiny sparkle */
+
+.habit-card::after {
+    content: "✦";
+    position: absolute;
+    left: 12px;
+    bottom: 10px;
+
+    color: #d7a6e8;
+    font-size: 15px;
+}
+
+.habit-card:hover {
+    transform: translateY(-7px) rotate(0.3deg);
+
+    box-shadow:
+        0 15px 32px rgba(210, 100, 145, 0.20);
+}
+
+/* =========================================
+   🌷 HABIT ICON
+========================================= */
+
+.habit-icon {
+    width: 58px;
+    height: 58px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffd9e7,
+            #e9dcff
+        );
+
+    border-radius: 19px;
+
+    font-size: 29px;
+
+    margin-bottom: 18px;
+
+    border: 2px solid #fff;
+
+    box-shadow:
+        0 5px 14px rgba(190, 110, 150, 0.13);
+}
+
+.habit-content h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+    color: #664c5b;
+}
+
+.habit-content p {
+    color: #897481;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+/* =========================================
+   💗 HABIT TAGS
+========================================= */
+
+.habit-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin-bottom: 18px;
+}
+
+.habit-info span {
+    background: #fff1f6;
+    color: #96647a;
+
+    font-size: 12px;
+
+    padding: 6px 10px;
+
+    border-radius: 20px;
+
+    border: 1px solid #ffdce8;
+}
+
+/* =========================================
+   💕 CHECK-IN BUTTON
+========================================= */
+
+.add-habit-btn {
+    width: 100%;
+    padding: 12px;
+
+    border: none;
+    border-radius: 14px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #eb78a4,
+            #d75b8b
+        );
+
+    color: white;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+
+    box-shadow:
+        0 5px 12px rgba(215, 91, 139, 0.18);
+}
+
+.add-habit-btn::after {
+    content: " ♡";
+}
+
+.add-habit-btn:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 18px rgba(215, 91, 139, 0.28);
+}
+
+.add-habit-btn:disabled {
+    background: linear-gradient(
+        135deg,
+        #a9dfbd,
+        #79bd94
+    );
+
+    cursor: default;
+    transform: none;
+}
+
+/* =========================================
+   🧸 REMOVE BUTTON
+========================================= */
+
+.remove-habit-btn {
+    width: 100%;
+    margin-top: 10px;
+
+    padding: 10px;
+
+    border: 1px solid #ffd2e2;
+    border-radius: 14px;
+
+    background: #fff9fc;
+    color: #a36c82;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.remove-habit-btn:hover {
+    background: #ffe8f1;
+    color: #d25283;
+}
+
+/* =========================================
+   🌼 CUSTOM HABIT
+========================================= */
+
+.custom-habit-label {
+    display: inline-block;
+
+    padding: 7px 12px;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff1c7,
+            #ffe6b1
+        );
+
+    color: #a16a25 !important;
+
+    font-size: 13px !important;
+    font-weight: 700;
+
+    border: 1px solid #ffdda0;
+}
+
+/* =========================================
+   ✨ COMPLETED MESSAGE
+========================================= */
+
+.completed-message {
+    background:
+        linear-gradient(
+            135deg,
+            #e5f9ee,
+            #dcf4ff
+        );
+
+    padding: 11px 13px;
+
+    border-radius: 13px;
+
+    color: #39785a !important;
+
+    border: 1px solid #c8ecd9;
+}
+
+/* =========================================
+   📅 HISTORY
+========================================= */
+
+.habit-history {
+    margin-top: 18px;
+}
+
+.habit-history > p {
+    color: #9a7285 !important;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.history-days {
+    display: flex;
+    gap: 6px;
+}
+
+.history-day {
+    flex: 1;
+    min-width: 0;
+
+    text-align: center;
+
+    padding: 7px 3px;
+
+    border-radius: 11px;
+
+    background: #f8edf3;
+
+    color: #987889;
+
+    font-size: 11px;
+}
+
+.history-day.completed {
+    background:
+        linear-gradient(
+            135deg,
+            #ffc9dc,
+            #dfceff
+        );
+
+    color: #a03e6b;
+
+    font-weight: bold;
+
+    box-shadow:
+        0 3px 8px rgba(210, 120, 165, 0.15);
+}
+
+.history-day strong {
+    display: block;
+    margin-top: 4px;
+    font-size: 14px;
+}
+
+/* =========================================
+   📊 DASHBOARD CARDS
+========================================= */
+
+.dashboard-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 45px;
+}
+
+.stat-card {
+    background: rgba(255, 255, 255, 0.94);
+
+    padding: 25px;
+
+    border-radius: 23px;
+
+    border: 2px solid #f0dce6;
+
+    box-shadow:
+        0 8px 22px rgba(190, 110, 145, 0.10);
+
+    position: relative;
+    overflow: hidden;
+
+    transition: 0.2s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-4px);
+}
+
+.stat-card::before {
+    content: "✦";
+    position: absolute;
+    right: 16px;
+    top: 10px;
+    color: #ed9dbb;
+    font-size: 18px;
+}
+
+.stat-card::after {
+    content: "♡";
+    position: absolute;
+    left: 13px;
+    bottom: 10px;
+    color: #f3b2c9;
+}
+
+.stat-card:nth-child(1) {
+    background: linear-gradient(
+        135deg,
+        #fff0f6,
+        #ffe0eb
+    );
+}
+
+.stat-card:nth-child(2) {
+    background: linear-gradient(
+        135deg,
+        #fff9e8,
+        #ffecc7
+    );
+}
+
+.stat-card:nth-child(3) {
+    background: linear-gradient(
+        135deg,
+        #f5efff,
+        #e7dcff
+    );
+}
+
+.stat-card:nth-child(4) {
+    background: linear-gradient(
+        135deg,
+        #fff0f6,
+        #ffdce9
+    );
+}
+
+.stat-card:nth-child(5) {
+    background: linear-gradient(
+        135deg,
+        #edfff5,
+        #d9f6e5
+    );
+}
+
+.stat-card:nth-child(6) {
+    background: linear-gradient(
+        135deg,
+        #eefaff,
+        #dcefff
+    );
+}
+
+.stat-card h3 {
+    margin-bottom: 12px;
+    color: #725968;
+}
+
+.stat-card strong {
+    display: block;
+    font-size: 36px;
+    margin-bottom: 5px;
+    color: #d95788;
+}
+
+.stat-card:nth-child(2) strong {
+    color: #e99832;
+}
+
+.stat-card:nth-child(3) strong {
+    color: #8661d2;
+}
+
+.stat-card:nth-child(4) strong {
+    color: #df5889;
+}
+
+.stat-card:nth-child(5) strong {
+    color: #55a978;
+}
+
+.stat-card:nth-child(6) strong {
+    color: #56a4d1;
+}
+
+.stat-card p {
+    color: #8e7784;
+}
+
+/* =========================================
+   📈 WEEKLY CHART
+========================================= */
+
+.weekly-chart {
+    background: rgba(255, 255, 255, 0.94);
+
+    padding: 30px;
+
+    margin-bottom: 45px;
+
+    border-radius: 25px;
+
+    border: 2px solid #eadcf4;
+
+    box-shadow:
+        0 8px 24px rgba(160, 120, 180, 0.10);
+
+    position: relative;
+}
+
+.weekly-chart::before {
+    content: "🎀";
+    position: absolute;
+    right: 20px;
+    top: 12px;
+    font-size: 24px;
+}
+
+.weekly-chart::after {
+    content: "✦ ♡ ✦";
+    position: absolute;
+    left: 20px;
+    bottom: 12px;
+    color: #eaa4be;
+}
+
+.weekly-chart h2 {
+    margin-bottom: 5px;
+    color: #805e9e;
+}
+
+.weekly-chart h2::after {
+    content: " ✨";
+}
+
+.chart-subtitle {
+    color: #957d8e;
+    margin-bottom: 25px;
+}
+
+.chart-bars {
+    height: 230px;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+
+    gap: 15px;
+}
+
+.chart-column {
+    height: 100%;
+    flex: 1;
+    max-width: 70px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.chart-value {
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 7px;
+    color: #9d6580;
+}
+
+.chart-bar-wrapper {
+    width: 100%;
+    height: 170px;
+
+    display: flex;
+    align-items: flex-end;
+}
+
+.chart-bar {
+    width: 100%;
+    min-height: 5px;
+
+    border-radius: 13px 13px 5px 5px;
+
+    background:
+        linear-gradient(
+            to top,
+            #e66f9d,
+            #d79af0,
+            #9ddcf4
+        );
+
+    box-shadow:
+        0 4px 10px rgba(210, 110, 170, 0.18);
+
+    transition: height 0.3s ease;
+
+    position: relative;
+}
+
+.chart-bar::before {
+    content: "♡";
+    position: absolute;
+    top: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #d9699a;
+    font-size: 12px;
+}
+
+.chart-day {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #806c78;
+}
+
+/* =========================================
+   🌸 EMPTY STATE
+========================================= */
+
+.empty-state {
+    text-align: center;
+
+    background: rgba(255, 255, 255, 0.94);
+
+    padding: 50px 25px;
+
+    border-radius: 25px;
+
+    border: 2px dashed #f1b9d0;
+
+    box-shadow:
+        0 8px 22px rgba(220, 130, 165, 0.10);
+
+    position: relative;
+}
+
+.empty-state::before {
+    content: "🌸  🎀  ✨  🦋  ♡";
+
+    display: block;
+
+    font-size: 27px;
+
+    margin-bottom: 15px;
+
+    animation: floatCute 3s ease-in-out infinite;
+}
+
+.empty-state h2 {
+    margin-bottom: 10px;
+    color: #d05283;
+}
+
+.empty-state p {
+    color: #8d7281;
+    margin-bottom: 20px;
+}
+
+/* =========================================
+   💕 AUTH / CREATE HABIT
+========================================= */
+
+.auth-card {
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,0.97),
+            rgba(255,235,244,0.94)
+        );
+
+    padding: 38px;
+
+    border-radius: 27px;
+
+    border: 2px solid #ffd2e2;
+
+    box-shadow:
+        0 12px 35px rgba(210, 110, 150, 0.15);
+
+    position: relative;
+    overflow: hidden;
+}
+
+.auth-card::before {
+    content: "🎀  ✨";
+
+    position: absolute;
+
+    top: 12px;
+    right: 18px;
+
+    font-size: 24px;
+}
+
+.auth-card::after {
+    content: "🌸  ♡  🦋";
+
+    position: absolute;
+
+    bottom: 12px;
+    right: 18px;
+
+    color: #e993b4;
+
+    font-size: 15px;
+}
+
+.auth-header {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.auth-header h1 {
+    margin-bottom: 10px;
+    color: #d05283;
+}
+
+.auth-header h1::after {
+    content: " 💕";
+}
+
+.auth-header p {
+    margin: 0;
+    line-height: 1.5;
+    color: #927687;
+}
+
+.auth-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.auth-card form label {
+    margin-top: 8px;
+    margin-bottom: 2px;
+    font-weight: 600;
+    color: #735767;
+}
+
+.auth-card form label::before {
+    content: "♡ ";
+    color: #e487aa;
+}
+
+.auth-card form input,
+.auth-card form select {
+    width: 100%;
+
+    padding: 13px 14px;
+
+    margin-bottom: 8px;
+
+    border: 2px solid #f4d3e1;
+
+    border-radius: 14px;
+
+    font-size: 15px;
+
+    box-sizing: border-box;
+
+    background: #fffafd;
+
+    color: #604b57;
+
+    transition: 0.2s ease;
+}
+
+.auth-card form input::placeholder {
+    color: #c3a9b5;
+}
+
+.auth-card form input:focus,
+.auth-card form select:focus {
+    outline: none;
+
+    border-color: #e98cad;
+
+    box-shadow:
+        0 0 0 4px rgba(233, 140, 173, 0.12);
+}
+
+.auth-card form .auth-button {
+    margin-top: 14px;
+}
+
+.auth-button {
+    width: 100%;
+
+    padding: 13px;
+
+    border: none;
+
+    border-radius: 15px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #eb78a4,
+            #c968a3
+        );
+
+    color: white;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+
+    box-shadow:
+        0 6px 15px rgba(211, 103, 151, 0.18);
+}
+
+.auth-button::after {
+    content: " ✨";
+}
+
+.auth-button:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 9px 20px rgba(211, 103, 151, 0.28);
+}
+
+.auth-button:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.auth-error {
+    background: #ffe5ed;
+    color: #c04d78 !important;
+
+    padding: 10px 12px;
+
+    border-radius: 12px;
+
+    border: 1px solid #ffcbdc;
+}
+
+/* =========================================
+   🌈 GENERAL LINKS
+========================================= */
+
+a {
+    transition: 0.2s ease;
+}
+
+/* =========================================
+   ✨ CUTE FLOATING ANIMATION
+========================================= */
+
+@keyframes floatCute {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-6px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* =========================================
+   📱 TABLET
+========================================= */
+
+@media (max-width: 900px) {
+    .habits-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* =========================================
+   📱 MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+    .navbar {
+        padding: 15px 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .dashboard-stats {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .home-container {
+        padding: 30px 15px;
+    }
+
+    .home-header h1 {
+        font-size: 32px;
+    }
+
+    .habits-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .weekly-chart {
+        padding: 20px;
+    }
+
+    .chart-bars {
+        gap: 8px;
+    }
+
+    .chart-column {
+        max-width: 45px;
+    }
+
+    .auth-card {
+        padding: 25px 20px;
+    }
+}
